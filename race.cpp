@@ -66,5 +66,6 @@ int main(int argc, char **argv)
         printf("joined a foo thread, number %ld\n", *((pthread_t *) status));
     }
 
+    pthread_mutex_destroy(&mut);
     return (0);
 }
